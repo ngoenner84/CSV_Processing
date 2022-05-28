@@ -41,6 +41,7 @@ try:
         writer.writeheader()
 except:
     print("Could not write header.")
+    exit(-1)
 
 # Read data file into temp file, one line at a time. If encounter
 # a value in 'Force Max' field, move data into two separate lines
